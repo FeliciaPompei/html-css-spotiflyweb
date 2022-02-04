@@ -18,5 +18,61 @@ body{
     font-family: 'Circular Std', sans-serif;
 }
 
+/* DESKTOP MIN-WIDTH 992PX */
 /* COMMON STYLES */
 
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+
+.flex-container{
+    display:flex;
+}
+
+/* CALL TO ACTION */
+#call-to-action{
+    height:8vh;
+    width:80%;
+    background-color:tomato;
+
+    justify-content:flex-end;
+}
+
+/* main */
+
+
+main #main-content{
+    height:82vh;
+    width:80%;
+    background-color: powderblue;
+    float:right;
+
+}
+main #nav-bar{
+    height:90vh;
+    width:20%;
+    background-color: pink;
+    float:left;
+}
+/* Footer */
+
+footer{
+    height:10vh;
+    width:100%;
+    background-color:thistle;
+}
+
+
+
+
+
+
+/* TABLET HOR. MIN-WIDTH 768PX */
+
+
+/* TABLET MIN-WIDTH 576px */
+
+/* MOBILE MAX-WIDTH 576PX */
