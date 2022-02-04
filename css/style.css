@@ -37,33 +37,29 @@ body{
 /* MAIN */
 
 main{
-    positin:relative;
+    
 }
 
 /* CALL TO ACTION */
 #call-to-action{
-    height:4vh;
+    height:10vh;
     width:80%;
-    background-color:tomato;
-    float:right;
+    background-color:rgba(0, 0, 0, 0.5);
+
+    position:fixed;
 }
 
 
 main #main-content{
-    height:82vh;
+    height:90vh;
     width:80%;
     background-color: powderblue;
-    float:right;
 
 }
 main #main-nav{
     height:90vh;
     width:20%;
     background-color: pink;
-    float:left;
-    position:absolute;
-    top:0;
-    left:0;
 }
 /* Footer */
 
