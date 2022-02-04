@@ -37,8 +37,7 @@ body{
     height:8vh;
     width:80%;
     background-color:tomato;
-
-    justify-content:flex-end;
+    float:right;
 }
 
 /* main */
