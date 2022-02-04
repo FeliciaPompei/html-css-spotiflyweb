@@ -4,16 +4,6 @@
     padding: 0;
 }
 
-/* 
-Gotham styles
-font-family: 'Gotham', sans-serif;
-font-family: 'Gotham Black', sans-serif;
-font-family: 'Gotham Light', sans-serif;
-font-family: 'Gotham Thin', sans-serif;
-font-family: 'Gotham XLight', sans-serif;
-font-family: 'Gotham Book', sans-serif;
-font-family: 'Gotham Ultra', sans-serif; */
-
 body{
     font-family: 'Circular Std', sans-serif;
     color:white;
@@ -21,13 +11,6 @@ body{
 
 /* DESKTOP MIN-WIDTH 992PX */
 /* COMMON STYLES */
-
-.clearfix::after{
-    content:"";
-    display:table;
-    clear:both;
-}
-
 
 .flex-container{
     display:flex;
@@ -53,8 +36,8 @@ i{
     font-size:1.5rem;
 }
 
-.fa-bars{
-    transform: rotate(90deg);
+.lg-d-none{
+    display:none;
 }
 
 /* MAIN */
@@ -63,15 +46,13 @@ main{
     flex-direction:row;
 }
 
-
 /* MAIN - MAIN NAV */
 
 main #main-nav{
     height:90vh;
     width:15%;
-    
-    background-color:black;
 
+    background-color:black;
 
     flex-direction: column;
     justify-content:space-between;
@@ -86,9 +67,7 @@ main #main-nav #account-nav-bar{
 main #main-nav #account-nav-bar #main-logo{
     width:70%;
 }
-main #main-nav #account-nav-bar #small-logo{
-    display:none;
-}
+
 main #main-nav #account-nav-bar ul li{
     list-style: none;
 }
@@ -96,7 +75,6 @@ main #main-nav #account-nav-bar ul li img,
 main #main-nav #account img{
     width:10%;
 }
-
 
 main #main-nav #account{
     width:100%;
@@ -121,8 +99,6 @@ main #main-content #call-to-action{
     text-align:right;
     line-height:10vh;
 }
-
-
 
 main #call-to-action .btn{
     border:1px solid white;
@@ -231,22 +207,19 @@ footer{
     main #main-nav #account-nav-bar ul li a{
         display:none;
     }
-    main #main-nav #account-nav-bar ul li img{
+    main #main-nav #account-nav-bar ul li img,
+    main #main-nav #account img{
         width:100%;
     }
 
-    main #main-nav #account-nav-bar #small-logo{
+    .xs-d-block{
         display:block;
     }
 
-    main #main-nav #account-nav-bar #main-logo{
+    .xs-d-none{
         display:none;
     }
 
-    .display{
-        display:none;
-    }
 
-    
 }
 
