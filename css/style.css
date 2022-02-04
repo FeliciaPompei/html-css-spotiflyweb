@@ -32,15 +32,21 @@ body{
     display:flex;
 }
 
+
+
+/* MAIN */
+
+main{
+    positin:relative;
+}
+
 /* CALL TO ACTION */
 #call-to-action{
-    height:8vh;
+    height:4vh;
     width:80%;
     background-color:tomato;
     float:right;
 }
-
-/* main */
 
 
 main #main-content{
@@ -50,11 +56,14 @@ main #main-content{
     float:right;
 
 }
-main #nav-bar{
+main #main-nav{
     height:90vh;
     width:20%;
     background-color: pink;
     float:left;
+    position:absolute;
+    top:0;
+    left:0;
 }
 /* Footer */
 
