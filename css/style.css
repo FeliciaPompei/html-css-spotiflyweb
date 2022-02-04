@@ -49,6 +49,13 @@ span{
     font-size:0.7rem;
 }
 
+i{
+    font-size:1.5rem;
+}
+
+.fa-bars{
+    transform: rotate(90deg);
+}
 
 /* MAIN */
 
@@ -62,25 +69,35 @@ main{
 main #main-nav{
     height:90vh;
     width:15%;
-    /* to change */
-    background-color: pink;
+    
+    background-color:black;
+
 
     flex-direction: column;
     justify-content:space-between;
 }
 
-#account-nav-bar{
+main #main-nav #account-nav-bar{
     height:40vh;
     width:100%;
-    /* to change */
-    background-color: bisque;
+    padding:15px;
 }
 
-#account{
-    height:10vh;
+main #main-nav #account-nav-bar img{
+    width:70%;
+}
+main #main-nav #account-nav-bar ul li{
+    list-style: none;
+}
+main #main-nav #account-nav-bar ul li img,
+main #main-nav #account img{
+    width:10%;
+}
+
+
+main #main-nav #account{
     width:100%;
-    /* to change */
-    background-color: coral;
+    padding: 0 15px;
 }
 
 
