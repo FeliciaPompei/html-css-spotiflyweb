@@ -32,6 +32,17 @@ body{
     display:flex;
 }
 
+a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size:0.7rem;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 
 
 /* MAIN */
@@ -40,37 +51,66 @@ main{
     flex-direction:row;
 }
 
-/* CALL TO ACTION */
-#call-to-action{
-    height:10vh;
-    width:100%;
-    background-color:rgba(0, 0, 0, 0.5);
+
+/* MAIN - MAIN NAV */
+
+main #main-nav{
+    height:90vh;
+    width:15%;
+    /* to change */
+    background-color: pink;
 }
 
 
+/* MAIN - MAIN-CONTENT */
 main #main-content{
     height:90vh;
     width:85%;
-    background-color: powderblue;
+    background-color:#1c222e;
 }
+
+/* MAIN - MAIN CONTENT - CALL-TO-ACTION */
+
+main #main-content #call-to-action{
+    height:10vh;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    text-align:right;
+    line-height:10vh;
+}
+
+
+
+main #call-to-action .btn{
+    border:1px solid white;
+    border-radius:15px;
+
+    padding: .5rem 1rem;
+    margin-right:10px;
+}
+
+/* MAIN - MAIN CONTENT - NAV-BAR-GENRE */
 
 #nav-bar-genre{
     width:100%;
     height:5vh;
-    background-color: seagreen;
-    
-    
 }
 
 #nav-bar-genre ul{
     margin:auto;
+
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 #nav-bar-genre ul li{
     display:inline-block;
-    margin-left:10px;
+    margin-left:15px;
+    line-height:5vh;
     
 }
+
+/* MAIN - MAIN CONTENT - ALBUMS */
 
 
 #albums{
@@ -79,12 +119,9 @@ main #main-content{
     background-color: purple;
 
 }
-main #main-nav{
-    height:90vh;
-    width:15%;
-    background-color: pink;
-}
-/* Footer */
+
+
+/* FOOTER*/
 
 footer{
     height:10vh;
@@ -98,8 +135,31 @@ footer{
 
 
 /* TABLET HOR. MIN-WIDTH 768PX */
+@media screen and (min-width:768px){
+    main #main-nav{
+        width:230.4px;
+    }
+}
+
+
+
 
 
 /* TABLET MIN-WIDTH 576px */
+@media screen and (min-width:576px){
+    main #main-nav{
+        width:230.4px;
+    }
+}
 
 /* MOBILE MAX-WIDTH 576PX */
+@media screen and (max-width:576px){
+    main #main-nav{
+        width:10%;
+    }
+
+    main #main-content{
+        width:90%;
+    }
+}
+
