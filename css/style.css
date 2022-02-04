@@ -83,8 +83,11 @@ main #main-nav #account-nav-bar{
     padding:15px;
 }
 
-main #main-nav #account-nav-bar img{
+main #main-nav #account-nav-bar #main-logo{
     width:70%;
+}
+main #main-nav #account-nav-bar #small-logo{
+    display:none;
 }
 main #main-nav #account-nav-bar ul li{
     list-style: none;
@@ -224,5 +227,26 @@ footer{
     main #main-content{
         width:90%;
     }
+
+    main #main-nav #account-nav-bar ul li a{
+        display:none;
+    }
+    main #main-nav #account-nav-bar ul li img{
+        width:100%;
+    }
+
+    main #main-nav #account-nav-bar #small-logo{
+        display:block;
+    }
+
+    main #main-nav #account-nav-bar #main-logo{
+        display:none;
+    }
+
+    .display{
+        display:none;
+    }
+
+    
 }
 
