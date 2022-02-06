@@ -50,7 +50,7 @@ main{
 
 main #main-nav{
     height:90vh;
-    width:15%;
+    width:230.4px;
 
     background-color:black;
 
@@ -65,21 +65,88 @@ main #main-nav #account-nav-bar{
 
 main #main-nav #account-nav-bar #main-logo{
     width:70%;
-}
-
-main #main-nav #account-nav-bar ul li{
-    list-style: none;
+    padding:.2rem .5rem .8rem;
 }
 
 main #main-nav #account-nav-bar ul li img,
 main #main-nav #account img{
     width:10%;
+
+    margin:0 .3rem .5rem;
+    vertical-align: text-top;
+
+    filter: invert(40%);
 }
+
+main #main-nav #account-nav-bar ul li{
+    list-style: none;
+    color:gray;
+}
+
+main #main-nav #account-nav-bar ul li a{
+    color:gray;
+    text-transform: none;
+}
+
+main #main-nav #account-nav-bar .new-playlist{
+    font-size:0.8rem;
+    line-height:1.5rem;
+}
+main #main-nav #account-nav-bar .new-playlist h3{
+    margin:1rem 0 .7rem;
+    font-size:.8rem;
+    text-transform: uppercase;
+}
+
+main #main-nav #account-nav-bar .new-playlist .fa-plus{
+    padding:0.5rem;
+    margin-right:.4rem;
+    margin-bottom:.7rem;
+    background-color:gray;
+    font-size:0.9rem;
+    color:black;
+}
+
 
 main #main-nav #account{
     width:100%;
     padding: 0 15px;
 }
+
+main #main-nav #account .border-bottom{
+    border-bottom:2px solid gray;
+    padding:10px 0;
+    font-size: 0.8rem;
+    margin-bottom:5px;
+}
+
+main #main-nav #account .border-bottom i{
+    border:2px solid gray;
+    border-radius:50%;
+    padding:2px;
+    font-size:.6rem;
+    margin-right: 10px;
+}
+
+main #main-nav #account img{
+    filter:invert(0);
+    
+    background-color:gray;
+    border-radius: 50%;
+    
+    margin-bottom:15px;
+
+}
+
+main #main-nav #account span{
+    font-size:.8rem;
+    font-weight:700;
+}
+
+main #main-nav #account .name{
+    color:white;
+}
+
 
 
 /* MAIN - MAIN-CONTENT */
@@ -163,9 +230,12 @@ main #main-content #playlist .albums .border-radius img{
 /* FOOTER*/
 
 footer{
-    height:10vh;
+    height:73.12px;
     width:100%;
     background-color:thistle;
+    
+    position:fixed;
+    bottom:0;
 }
 
 
@@ -187,6 +257,16 @@ footer{
         width:230.4px;
     }
 
+    main #main-content #playlist .albums{
+        flex-wrap:wrap;
+    }
+
+    main #main-content #playlist .albums .album-cover{
+        margin:10px 10px  7.5px 0;
+        width:75px;
+    }
+
+    
     
 }
 
@@ -200,13 +280,79 @@ footer{
         width:90%;
     }
 
+    main #main-nav #account-nav-bar,
+    main #main-nav #account{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+
+
+    main #main-nav #account-nav-bar,
+    main #main-nav #account{
+        margin:0;
+        padding:0;
+    }
+
+    main #main-nav #account-nav-bar ul li{
+        text-align: center;
+        margin-bottom:5px;
+    }
+
     main #main-nav #account-nav-bar ul li a{
         display:none;
     }
+
     main #main-nav #account-nav-bar ul li img,
-    main #main-nav #account img{
-        width:100%;
+    main #main-nav #account img,
+    main #main-nav #small-logo{
+        width:50%;
+        margin:auto;
     }
+    main #main-nav #small-logo{
+        margin-bottom: 15px;
+        margin-top:5px;
+    }
+
+    main #main-nav #account{
+        text-align: center;
+    }
+
+    main #main-nav #account .border-bottom{
+        border-bottom:none;
+        padding:15px 0;
+        font-size: 0.8rem;
+        margin-bottom:0;
+    }
+    
+    main #main-nav #account .border-bottom i{
+        margin:0;
+    }
+
+    main #main-nav #account img{
+        filter:invert(0);
+        
+        background-color:gray;
+        border-radius: 50%;
+        vertical-align:none;
+        margin-bottom:15px;
+    
+    }
+    
+
+    main #main-content #playlist .albums{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    main #main-content #playlist .albums .album-cover{
+    margin:10px 10px  7.5px 0;
+    }
+
+    
+    
+
+
 
     .xs-d-block{
         display:block;
