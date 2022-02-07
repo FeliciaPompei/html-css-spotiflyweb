@@ -18,13 +18,13 @@ body{
 
 a{
     text-decoration: none;
-    color:white;
+    color:gray;
     text-transform: uppercase;
     font-size:0.7rem;
 }
 
 a:hover{
-    text-decoration: underline;
+    color:white;
 }
 
 span{
@@ -46,6 +46,14 @@ i{
     border-radius:10px;
     background: #d3d3d3;
     outline: none;
+    position: relative;
+    background-color:gray;
+}
+
+.background-color{
+    width:25%;
+    height:100%;
+    background-color:lightgray;
 }
 
 /* MAIN */
@@ -77,22 +85,14 @@ main #main-nav{
     margin-bottom:.5rem; 
     vertical-align: middle;
     margin:0 5px 5px 15px;
-
-    filter: invert(40%);
 }
 
-#top-nav-bar #center-nav ul li{
-    list-style: none;
-    color:gray;
-    
-}
 
 #top-nav-bar #center-nav ul .active{
     border-left:lime 2px solid;
 }
 
 #top-nav-bar #center-nav ul li a{
-    color:gray;
     text-transform: none;
 }
 
@@ -105,6 +105,10 @@ main #main-nav{
     height:200px;
 }
 
+#top-nav-bar #playlists .hover-white:hover span{
+    color:white;
+}
+
 #top-nav-bar #playlists ul{
     overflow: auto;
 }
@@ -112,6 +116,10 @@ main #main-nav{
 #top-nav-bar #playlists ul li{
     list-style: none;
 } 
+
+#top-nav-bar #playlists ul li:hover{
+    color:white;
+}
 
 
 
@@ -129,6 +137,10 @@ main #main-nav{
     background-color:gray;
     font-size:0.9rem;
     color:black;
+}
+
+#top-nav-bar #playlists .hover-white:hover .fa-plus{
+    background-color:white;
 }
 
 /* MAIN -MAIN-NAV BOT-NAV-BAR */
@@ -168,7 +180,9 @@ main #main-nav #bot-nav-bar span{
     font-size:.8rem;
     font-weight:700;
 }
-
+#bot-nav-bar .border-bottom span:hover{
+    color:white;
+}
 main #main-nav #bot-nav-bar #user-name{
     color:white;
 }
@@ -198,6 +212,11 @@ main #call-to-action .btn{
     margin-right:10px;
 }
 
+main #call-to-action .btn:hover{
+    font-size:1rem;
+    
+}
+
 /* MAIN - MAIN CONTENT - NAV-BAR-GENRE */
 
 #nav-bar-genre{
@@ -216,6 +235,7 @@ main #call-to-action .btn{
     margin-left:15px;
     line-height:5vh;
 }
+
 
 /* MAIN - MAIN CONTENT - ALBUMS */
 
@@ -328,9 +348,15 @@ footer #user-tools .play-option .fa-play{
 
 }
 
+footer #user-tools .play-option .fa-play:hover{
+    font-size:1.3rem;
+
+}
+
 footer #user-tools .play-option .fa-caret-right{
     border-right:3px white solid;
     font-size: 1.1rem;
+    
 
 }
 
@@ -343,7 +369,31 @@ footer #user-tools .song-duration{
 
 footer #user-tools .song-duration .slidecontainer{
     width:80%;
+    
 }
+
+
+
+input{
+    display:none;
+    position:absolute;
+    width:100%;
+    left:0;
+    top:-7px;
+    border-radius: 10px;
+    
+}
+
+input::-webkit-slider-runnable-track{
+    appearance: none;
+    color: lime;
+    
+}
+
+.slidecontainer:hover input{
+    display:block;
+}
+
 
 
 
@@ -365,7 +415,14 @@ footer .col-right .slidecontainer{
     width:50%;
 }
 
+footer .col-left i:hover,
+footer .col-left span:hover{
+    color:white;
+}
 
+footer .col-left span:hover{
+    text-decoration: underline;
+}
 
 
 
