@@ -48,7 +48,7 @@ i{
 main #main-nav{
     width:230.4px;
     height:90vh;
-    
+
     background-color:black;
 
     flex-direction: column;
@@ -161,10 +161,10 @@ main #main-nav #bot-nav-bar #user-name{
 }
 
 
-
 /* MAIN - MAIN-CONTENT */
 main #main-content{
     width:85%;
+    height:90vh;
     background-color:#1c222e;
     overflow:auto;
 }
@@ -248,7 +248,36 @@ footer{
     position:fixed;
     bottom:0;
     z-index:3;
+
+    justify-content: space-between;
 }
+
+footer .col-left .album-cover-mini{
+    padding:1rem;
+    width: 180px;
+    align-items: center;
+}
+
+footer .col-left .album-cover-mini img{
+    width:30%;
+}
+footer .col-left .album-cover-mini .album-name {
+    line-height:.6rem;
+    margin:auto;
+    margin-left:5px;
+}
+footer .col-left .album-cover-mini .album-name p,
+footer .col-left .album-cover-mini .album-name span{
+    margin:0;
+    font-size:.7rem;
+}
+
+footer .col-left .album-cover-mini i{
+    font-size:.9rem;
+    color:gray;
+    margin:0 .25rem;
+}
+
 
 
 
