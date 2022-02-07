@@ -310,10 +310,30 @@ footer #user-tools .play-option{
     margin-bottom:10px;
 }
 
-footer #user-tools .play-option .fa-caret-left{
-    border-left:4px solid white;
-    font-size:2rem;
+footer #user-tools .play-option i{
+    font-size:1rem;
+    margin: 0 5px;
 }
+
+footer #user-tools .play-option .fa-caret-left{
+    border-left:3px white solid;
+    font-size: 1.1rem;
+
+}
+
+footer #user-tools .play-option .fa-play{
+    border:3px white solid;
+    border-radius: 50%;
+    padding:3px;
+
+}
+
+footer #user-tools .play-option .fa-caret-right{
+    border-right:3px white solid;
+    font-size: 1.1rem;
+
+}
+
 
 /* DIV SONG DURATION */
 footer #user-tools .song-duration{
@@ -331,6 +351,7 @@ footer #user-tools .song-duration .slidecontainer{
 footer .col-right{
     width:180px;
     height:100%;
+    padding:10px;
 
     justify-content:space-evenly;
     align-items: center;
