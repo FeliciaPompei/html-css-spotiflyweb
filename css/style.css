@@ -252,36 +252,70 @@ footer{
     justify-content: space-between;
 }
 
-footer .col-left .album-cover-mini{
+/* FOOTER COL-LEFT ALMUB COVER MINI */
+
+.col-left .album-cover-mini{
     padding:1rem;
     width: 180px;
+    height:100%;
     align-items: center;
 }
 
-footer .col-left .album-cover-mini img{
+.col-left .album-cover-mini img{
     width:30%;
 }
-footer .col-left .album-cover-mini .album-name {
+.col-left .album-cover-mini .album-name {
     line-height:.6rem;
     margin:auto;
     margin-left:5px;
 }
-footer .col-left .album-cover-mini .album-name p,
-footer .col-left .album-cover-mini .album-name span{
+.col-left .album-cover-mini .album-name p,
+.col-left .album-cover-mini .album-name span{
     margin:0;
     font-size:.7rem;
 }
 
-footer .col-left .album-cover-mini i{
+.col-left .album-cover-mini i{
     font-size:.9rem;
     color:gray;
     margin:0 .25rem;
 }
 
 
+/* FOOTER COL-CENTER - USER-TOOLS */
+
+footer #user-tools{
+    width:50%;
+    background-color:hotpink;
+
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+footer #user-tools .play-option{
+    height:50%;
+    background-color: plum;
+    text-align:center;
+}
+
+footer #user-tools .play-option .fa-caret-left{
+    border-left:4px solid white;
+    font-size:2rem;
+}
+
+footer #user-tools .song-duration{
+    height:40%;
+    background-color: rebeccapurple;
+}
 
 
 
+footer .col-right{
+    width:20%;
+    height:100%;
+    background-color: navy;
+}
 
 
 /* TABLET HOR. MIN-WIDTH 768PX */
