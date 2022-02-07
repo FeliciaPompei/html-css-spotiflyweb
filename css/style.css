@@ -112,8 +112,8 @@ main #main-nav{
 }
 
 #top-nav-bar #playlists ul{
-    /* overflow:auto;
-    height:75px; */
+    overflow:auto;
+    height:75px;
 }
 
 #top-nav-bar #playlists ul li{
@@ -150,9 +150,8 @@ main #main-nav{
 
 #bot-nav-bar{
     padding: 0 15px;
-    z-index:2;
-    background-color:black;
-    /* height: 75px; */
+    z-index:3;
+    flex-shrink:0;
 }
 
 #bot-nav-bar .border-bottom{
@@ -262,7 +261,26 @@ main #main-content #playlist .albums .album-cover{
     width:180px;
     text-align:center;
     margin:20px 20px  15px 0;
+    
 }
+
+main #main-content #playlist .albums .album-cover .album-image{
+    position:relative;
+}
+
+main #main-content #playlist .albums .album-cover .album-image .fa-play-circle{
+    display:none;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+}
+
+
+main #main-content #playlist .albums .album-cover:hover .fa-play-circle{
+    display:block;
+} 
 
 main #main-content #playlist .albums .album-cover img{
     width:100%;
