@@ -72,6 +72,9 @@ main #main-nav{
 }
 
 /* MAIN -TOP-MAIN-NAV */
+#top-nav-bar{
+    flex-direction:column;
+}
 
 #top-nav-bar #logo #main-logo{
     width:60%;
@@ -102,7 +105,6 @@ main #main-nav{
     line-height:1.5rem;
     margin-left:15px;
     color:gray;
-    height:200px;
 }
 
 #top-nav-bar #playlists .hover-white:hover span{
@@ -110,7 +112,8 @@ main #main-nav{
 }
 
 #top-nav-bar #playlists ul{
-    overflow: auto;
+    /* overflow:auto;
+    height:75px; */
 }
 
 #top-nav-bar #playlists ul li{
@@ -148,6 +151,8 @@ main #main-nav{
 #bot-nav-bar{
     padding: 0 15px;
     z-index:2;
+    background-color:black;
+    /* height: 75px; */
 }
 
 #bot-nav-bar .border-bottom{
@@ -436,6 +441,15 @@ footer .col-left span:hover{
     main #main-nav{
         width:230.4px;
     }
+
+    main #main-content #playlist .albums{
+        flex-wrap:wrap;
+    }
+
+    main #main-content #playlist .albums .album-cover{
+        margin:10px 10px  7.5px 0;
+        /* width: 40%; */
+    }
 }
 
 
@@ -444,6 +458,9 @@ footer .col-left span:hover{
     main #main-nav{
         width:230.4px;
     }
+    main #main-content{
+        width:80%;
+    }
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
@@ -451,7 +468,7 @@ footer .col-left span:hover{
 
     main #main-content #playlist .albums .album-cover{
         margin:10px 10px  7.5px 0;
-        width:75px;
+        width:40%;
     }
 
     
@@ -485,6 +502,7 @@ footer .col-left span:hover{
     main #main-nav #top-nav-bar ul li{
         text-align: center;
         margin-bottom:5px;
+        list-style: none;
     }
 
     main #main-nav #top-nav-bar ul li a{
