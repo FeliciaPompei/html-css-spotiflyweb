@@ -96,7 +96,7 @@ main #main-nav{
     text-transform: none;
 }
 
-
+/* NEW PLAYLISTS */
 #top-nav-bar #playlists{
     font-size:0.8rem;
     line-height:1.5rem;
@@ -120,7 +120,6 @@ main #main-nav{
 #top-nav-bar #playlists ul li:hover{
     color:white;
 }
-
 
 
 #top-nav-bar #playlists h3{
