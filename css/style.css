@@ -67,8 +67,8 @@ main #main-nav{
     width:10%;
 
     margin-bottom:.5rem; 
-    vertical-align: text-top;
-    margin-left:15px;
+    vertical-align: middle;
+    margin:0 5px 5px 15px;
 
     filter: invert(40%);
 }
@@ -79,7 +79,7 @@ main #main-nav{
     
 }
 
-#top-nav-bar #center-nav ul li:hover{
+#top-nav-bar #center-nav ul .active{
     border-left:lime 2px solid;
 }
 
