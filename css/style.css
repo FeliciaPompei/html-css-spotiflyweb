@@ -236,6 +236,10 @@ main #call-to-action .btn:hover{
     line-height:5vh;
 }
 
+#nav-bar-genre ul li.active{
+    border-bottom:lime solid 2px;
+}
+
 
 /* MAIN - MAIN CONTENT - ALBUMS */
 
