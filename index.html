@@ -19,17 +19,27 @@
     <body>
         <main class="flex-container">
 
+            <!-- Main nav-bar -->
             <nav id="main-nav" class="flex-container">
+                <!-- top-nav-bar -->
                 <section id="top-nav-bar">
+                    <!-- main logos -->
+                    <div id="logo">
+                        <img id="main-logo" class="xs-d-none" src="img/logo.svg" alt="main logo">
+                        <img id="small-logo"class="lg-d-none xs-d-block" src="img/logo-small.svg" alt="main logo">
+                    </div>
 
-                    <img id="main-logo" class="xs-d-none" src="img/logo.svg" alt="main logo">
-                    <img id="small-logo"class="lg-d-none xs-d-block" src="img/logo-small.svg" alt="main logo">
-                    <ul>
-                        <li><img src="img/home.svg" alt="Hoem icon"><a href="#">Home</a></li>
-                        <li><img src="img/search.svg" alt="search icon"><a href="#">Cerca</a></li>
-                        <li><img src="img/libreria.svg" alt="librery icon"><a href="#">La tua libreria</a></li>
-                    </ul>
-                    <div class="playlists xs-d-none">
+                    <!-- center-nav -->
+                    <div id="center-nav">
+                        <ul>
+                            <li><img src="img/home.svg" alt="Hoem icon"><a href="#">Home</a></li>
+                            <li><img src="img/search.svg" alt="search icon"><a href="#">Cerca</a></li>
+                            <li><img src="img/libreria.svg" alt="librery icon"><a href="#">La tua libreria</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- nav- playlists -->
+                    <div id="playlists" class="xs-d-none">
                         <h3>Playlist</h3>
                         <span><i class="fas fa-plus"></i>Crea Playlist</span>
                             <ul>
@@ -44,6 +54,7 @@
                     </div>
                 </section>
 
+                <!-- bottom nav-bar -->
                 <section id="bot-nav-bar">
                     <div class="border-bottom"><i class="fas fa-arrow-down"></i><span class="xs-d-none">Installa app</span></div>
                     <div>
@@ -51,7 +62,6 @@
                         <span id="user-name" class="xs-d-none">John Doe</span>
                     </div>
                 </section>
-            
             </nav>
 
             <section id="main-content">
