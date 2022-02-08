@@ -75,6 +75,8 @@ main #main-nav{
     background-color:black;
 
     flex-direction: column;
+
+    flex-shrink:0;
 }
 
 /* MAIN -TOP-MAIN-NAV */
@@ -340,7 +342,7 @@ main #main-content{
 /* FOOTER*/
 
 footer{
-    height:74.12px;
+    height:10vh;
     width:100%;
     background-color:#282828;
     
@@ -496,9 +498,6 @@ footer .col-left span:hover{
 
 /* TABLET HOR. MIN-WIDTH 768PX */
 @media screen and (max-width:992px) and (min-width:768px){
-    main #main-nav{
-        width:230.4px;
-    }
 
     main #main-content #playlist .albums .album-cover{
         margin:10px 10px  7.5px 0;
@@ -508,9 +507,6 @@ footer .col-left span:hover{
 
 /* TABLET MIN-WIDTH 576px */
 @media screen and (max-width:768px) and (min-width:576px){
-    main #main-nav{
-        width:230.4px;
-    }
     main #main-content{
         width:80%;
     }
