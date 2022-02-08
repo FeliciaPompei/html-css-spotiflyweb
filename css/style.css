@@ -185,7 +185,7 @@ main #main-nav{
 }
 
 
-/* HOVER MAIN NAV */
+/* HOVER MAIN-NAV */
 
 #top-nav-bar #playlists .hover-white:hover span,
 #top-nav-bar #playlists ul li:hover,
@@ -277,7 +277,7 @@ main #main-content{
 /* ALBUM CONTAINER */
 
 #playlist .albums .album-cover{
-    width:180px;
+    width:20%;
     text-align:center;
     margin:20px 20px  15px 0;
     
@@ -499,8 +499,14 @@ footer .col-left span:hover{
 /* TABLET HOR. MIN-WIDTH 768PX */
 @media screen and (max-width:992px) and (min-width:768px){
 
+    main #main-content #playlist .albums{
+        flex-wrap:wrap;
+        /* justify-content: flex-start; */
+    }
+
     main #main-content #playlist .albums .album-cover{
         margin:10px 10px  7.5px 0;
+        /* width:20% */
     }
 }
 
@@ -513,12 +519,12 @@ footer .col-left span:hover{
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
 
     main #main-content #playlist .albums .album-cover{
         margin:10px 10px  7.5px 0;
-        width:75px
+        width:40%;
     }
 
     
@@ -603,10 +609,12 @@ footer .col-left span:hover{
     main #main-content #playlist .albums{
         flex-wrap:wrap;
         justify-content:center;
+        
     }
 
     main #main-content #playlist .albums .album-cover{
     margin:10px 10px  7.5px 0;
+    width:40%;
     }
 
     
