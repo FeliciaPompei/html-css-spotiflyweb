@@ -200,11 +200,19 @@ main #main-content{
 }
 
 /* MAIN - MAIN CONTENT - CALL-TO-ACTION */
-
+main .call-to-action-container{
+    position:relative;
+    height:74px;
+    width: 85%;
+}
 main #main-content #call-to-action{
     background-color:rgba(0, 0, 0, 0.5);
     text-align:right;
     line-height:74px;
+    width:85%;
+    top:0;
+    right:0;
+    position:fixed;
 }
 
 main #call-to-action .btn{
