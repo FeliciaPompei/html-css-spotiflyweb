@@ -12,9 +12,6 @@ body{
 /* DESKTOP MIN-WIDTH 992PX */
 /* COMMON STYLES */
 
-.flex-container{
-    display:flex;
-}
 
 a{
     text-decoration: none;
@@ -23,9 +20,6 @@ a{
     font-size:0.7rem;
 }
 
-a:hover{
-    color:white;
-}
 
 span{
     color:rgb(172, 172, 172);
@@ -36,6 +30,9 @@ i{
     font-size:1.5rem;
 }
 
+.flex-container{
+    display:flex;
+}
 
 .lg-d-none{
     display:none;
@@ -56,6 +53,15 @@ i{
     background-color:lightgray;
 }
 
+
+
+/* COMMON HOVERS */
+
+a:hover{
+    color:white;
+}
+
+
 /* MAIN */
 
 
@@ -69,10 +75,10 @@ main #main-nav{
     background-color:black;
 
     flex-direction: column;
-    justify-content:space-between;
 }
 
 /* MAIN -TOP-MAIN-NAV */
+
 #top-nav-bar{
     flex-direction:column;
 }
@@ -82,7 +88,9 @@ main #main-nav{
     padding:.5rem .5rem .8rem;
 }
 
-#top-nav-bar ul li img,
+/* MAIN -TOP-MAIN-NAV - CENTER NAV */
+
+#top-nav-bar #center-nav ul li img,
 #bot-nav-bar img{
     width:10%;
 
@@ -92,39 +100,22 @@ main #main-nav{
 }
 
 
-#top-nav-bar #center-nav ul .active{
-    border-left:lime 2px solid;
-}
-
 #top-nav-bar #center-nav ul li a{
     text-transform: none;
 }
 
-/* NEW PLAYLISTS */
+#top-nav-bar #center-nav ul li.active{
+    border-left:lime 2px solid;
+}
+
+/* MAIN -TOP-MAIN-NAV - NEW PLAYLISTS */
+
 #top-nav-bar #playlists{
     font-size:0.8rem;
     line-height:1.5rem;
     margin-left:15px;
     color:gray;
 }
-
-#top-nav-bar #playlists .hover-white:hover span{
-    color:white;
-}
-
-#top-nav-bar #playlists ul{
-    overflow:auto;
-    height:75px;
-}
-
-#top-nav-bar #playlists ul li{
-    list-style: none;
-} 
-
-#top-nav-bar #playlists ul li:hover{
-    color:white;
-}
-
 
 #top-nav-bar #playlists h3{
     margin:1rem 0 .7rem;
@@ -142,17 +133,24 @@ main #main-nav{
     color:black;
 }
 
-#top-nav-bar #playlists .hover-white:hover .fa-plus{
-    background-color:white;
-}
+
+
+/* #top-nav-bar #playlists ul{
+    overflow:auto;
+    height:75px;
+} */
+
+#top-nav-bar #playlists ul li{
+    list-style: none;
+} 
+
 
 /* MAIN -MAIN-NAV BOT-NAV-BAR */
 
 
 #bot-nav-bar{
     padding: 0 15px;
-    z-index:3;
-    flex-shrink:0;
+    margin-top:auto;
 }
 
 #bot-nav-bar .border-bottom{
@@ -170,26 +168,35 @@ main #main-nav{
     margin-right: 10px;
 }
 
-main #main-nav #bot-nav-bar img{
+#bot-nav-bar img{
     filter:invert(0);
     
     background-color:gray;
     border-radius: 50%;
-    
     margin-bottom:15px;
 
 }
 
-main #main-nav #bot-nav-bar span{
+#bot-nav-bar span{
     font-size:.8rem;
     font-weight:700;
 }
+
+
+/* HOVER MAIN NAV */
+
+#top-nav-bar #playlists .hover-white:hover span,
+#top-nav-bar #playlists ul li:hover,
+main #main-nav #bot-nav-bar #user-name,
 #bot-nav-bar .border-bottom span:hover{
     color:white;
 }
-main #main-nav #bot-nav-bar #user-name{
-    color:white;
+
+#top-nav-bar #playlists .hover-white:hover .fa-plus{
+    background-color:white;
 }
+
+
 
 
 /* MAIN - MAIN-CONTENT */
@@ -492,13 +499,8 @@ footer .col-left span:hover{
         width:230.4px;
     }
 
-    main #main-content #playlist .albums{
-        /* flex-wrap:wrap; */
-    }
-
     main #main-content #playlist .albums .album-cover{
         margin:10px 10px  7.5px 0;
-        /* width:75px;  */
     }
 }
 
