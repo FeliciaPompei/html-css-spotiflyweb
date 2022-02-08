@@ -134,11 +134,10 @@ main #main-nav{
 }
 
 
-
-/* #top-nav-bar #playlists ul{
+#top-nav-bar #playlists ul{
     overflow:auto;
-    height:75px;
-} */
+    max-height:200px;
+} 
 
 #top-nav-bar #playlists ul li{
     list-style: none;
@@ -151,6 +150,7 @@ main #main-nav{
 #bot-nav-bar{
     padding: 0 15px;
     margin-top:auto;
+    z-index:3;
 }
 
 #bot-nav-bar .border-bottom{
