@@ -76,6 +76,8 @@ main #main-nav{
 
     flex-direction: column;
 
+    /* vertical responsive */
+    overflow-y:hidden;
     flex-shrink:0;
 }
 
@@ -83,7 +85,7 @@ main #main-nav{
 
 #top-nav-bar{
     flex-direction:column;
-    height:90%;
+    height:80%;
 }
 
 #top-nav-bar #logo #main-logo{
@@ -136,16 +138,17 @@ main #main-nav{
     color:black;
 }
 
-
 #top-nav-bar #playlists ul{
-    overflow:auto;
-    max-height:200px;
-} 
+
+    /* vertical responsive */
+    flex-direction: column;
+}
+
 
 #top-nav-bar #playlists ul li{
     list-style: none;
+    height:15%;
 } 
-
 
 /* MAIN -MAIN-NAV BOT-NAV-BAR */
 
@@ -342,7 +345,7 @@ main #main-content{
 /* FOOTER*/
 
 footer{
-    height:10vh;
+    min-height:10vh;
     width:100%;
     background-color:#282828;
     
@@ -501,12 +504,10 @@ footer .col-left span:hover{
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
-        /* justify-content: flex-start; */
     }
 
     main #main-content #playlist .albums .album-cover{
         margin:10px 10px  7.5px 0;
-        /* width:20% */
     }
 }
 
@@ -519,7 +520,6 @@ footer .col-left span:hover{
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
-        /* justify-content: flex-start; */
     }
 
     main #main-content #playlist .albums .album-cover{
@@ -533,10 +533,6 @@ footer .col-left span:hover{
 
 /* MOBILE MAX-WIDTH 576PX */
 @media screen and (max-width:576px){
-
-    body, main, footer{
-        min-width:490px;
-    }
 
     main #main-nav{
         width:10%;
@@ -617,11 +613,6 @@ footer .col-left span:hover{
     width:40%;
     }
 
-    
-    
-
-
-
     .xs-d-block{
         display:block;
     }
@@ -633,3 +624,15 @@ footer .col-left span:hover{
 
 }
 
+
+@media screen and (max-height:530px) {
+
+    #top-nav-bar #playlists .vertical-responsive{
+        overflow-y:auto;
+    }
+
+    #bot-nav-bar{
+        background-color:black;
+    }
+    
+}
