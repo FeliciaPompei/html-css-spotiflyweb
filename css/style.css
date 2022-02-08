@@ -81,6 +81,7 @@ main #main-nav{
 
 #top-nav-bar{
     flex-direction:column;
+    height:90%;
 }
 
 #top-nav-bar #logo #main-logo{
@@ -150,7 +151,6 @@ main #main-nav{
 #bot-nav-bar{
     padding: 0 15px;
     margin-top:auto;
-    z-index:3;
 }
 
 #bot-nav-bar .border-bottom{
@@ -224,6 +224,7 @@ main #main-content{
     top:0;
     right:0;
     position:fixed;
+    z-index:2;
 }
 
 #call-to-action-container #call-to-action .btn{
@@ -348,19 +349,23 @@ footer{
     z-index:3;
 
     justify-content: space-between;
+    align-items: center;
 }
 
 /* FOOTER COL-LEFT ALMUB COVER MINI */
 
+.col-left{
+    width:15%;
+}
+
 .col-left .album-cover-mini{
     padding:1rem;
-    width: 180px;
     height:100%;
     align-items: center;
 }
 
 .col-left .album-cover-mini img{
-    width:30%;
+    width:50px;
 }
 .col-left .album-cover-mini .album-name {
     line-height:.6rem;
@@ -382,7 +387,7 @@ footer{
 
 /* FOOTER COL-CENTER - USER-TOOLS */
 
-footer #user-tools{
+#user-tools{
     width:50%;
 
     flex-direction: column;
@@ -390,53 +395,46 @@ footer #user-tools{
     
 }
 
-footer #user-tools .play-option{
+#user-tools .play-option{
     text-align:center;
     margin-bottom:10px;
 }
 
-footer #user-tools .play-option i{
+#user-tools .play-option i{
     font-size:1rem;
     margin: 0 5px;
 }
 
-footer #user-tools .play-option .fa-caret-left{
+#user-tools .play-option .fa-caret-left{
     border-left:3px white solid;
     font-size: 1.1rem;
-
 }
 
-footer #user-tools .play-option .fa-play{
+#user-tools .play-option .fa-play{
     border:3px white solid;
     border-radius: 50%;
-    padding:3px;
-
+    padding:5px;
+    font-size:.9rem
 }
 
-footer #user-tools .play-option .fa-play:hover{
-    font-size:1.3rem;
-
-}
-
-footer #user-tools .play-option .fa-caret-right{
+#user-tools .play-option .fa-caret-right{
     border-right:3px white solid;
     font-size: 1.1rem;
-    
-
 }
 
 
-/* DIV SONG DURATION */
-footer #user-tools .song-duration{
+
+
+/* FOOTER COL-CENTER - SONG DURATION */
+
+#user-tools .song-duration{
     justify-content: space-evenly;
     align-items: center;
 }
 
-footer #user-tools .song-duration .slidecontainer{
+#user-tools .song-duration .slidecontainer{
     width:80%;
-    
 }
-
 
 
 input{
@@ -448,23 +446,10 @@ input{
     border-radius: 10px;
     
 }
+/* FOOTER COL-RIGHT */
 
-input::-webkit-slider-runnable-track{
-    appearance: none;
-    color: lime;
-    
-}
-
-.slidecontainer:hover input{
-    display:block;
-}
-
-
-
-
-
-footer .col-right{
-    width:180px;
+.col-right{
+    width:15%;
     height:100%;
     padding:10px;
 
@@ -480,18 +465,29 @@ footer .col-right .slidecontainer{
     width:50%;
 }
 
-footer .col-left i:hover,
-footer .col-left span:hover{
-    color:white;
-}
+
+/*  FOOTER HOVERS */
 
 footer .col-left span:hover{
     text-decoration: underline;
 }
 
+footer #user-tools .play-option .fa-play:hover{
+    font-size:1.2rem;
+}
+
+.slidecontainer:hover input{
+    display:block;
+}
+
+footer .col-left i:hover,
+footer .col-left span:hover{
+    color:white;
+}
 
 
 
+/* SCREEN RULES */
 
 /* TABLET HOR. MIN-WIDTH 768PX */
 @media screen and (max-width:992px) and (min-width:768px){
@@ -547,7 +543,6 @@ footer .col-left span:hover{
     main #main-nav #bot-nav-bar{
         display:flex;
         flex-direction:column;
-        justify-content: center;
     }
 
 
