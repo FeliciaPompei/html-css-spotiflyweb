@@ -355,7 +355,7 @@ footer{
 /* FOOTER COL-LEFT ALMUB COVER MINI */
 
 .col-left{
-    width:15%;
+    width:180px;
 }
 
 .col-left .album-cover-mini{
@@ -365,7 +365,7 @@ footer{
 }
 
 .col-left .album-cover-mini img{
-    width:50px;
+    width:30px;
 }
 .col-left .album-cover-mini .album-name {
     line-height:.6rem;
@@ -382,6 +382,11 @@ footer{
     font-size:.9rem;
     color:gray;
     margin:0 .25rem;
+}
+
+#song-option{
+    flex-direction: column;
+    margin-left:15px;
 }
 
 
@@ -433,7 +438,7 @@ footer{
 }
 
 #user-tools .song-duration .slidecontainer{
-    width:80%;
+    width:70%;
 }
 
 
@@ -449,7 +454,7 @@ input{
 /* FOOTER COL-RIGHT */
 
 .col-right{
-    width:15%;
+    width:180px;
     height:100%;
     padding:10px;
 
