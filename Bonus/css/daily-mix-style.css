@@ -50,6 +50,7 @@
 
 #play-options{
     margin: 20px;
+    
 }
 
 #play-options i{
@@ -71,5 +72,59 @@
 
 #play-options .fa-play:hover{
     font-size:2.5rem;
+}
+
+#play-list{
+    width:85%;
+    margin:0 auto;
+    color:rgba(255, 255, 255, 0.6)
+}
+
+.song:hover{
+    background-color:rgba(0, 0, 0, 0.4)
+}
+
+
+
+.play-list-container{
+    align-items: center;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.play-list-container>div{
+    width:calc(100% / 5);
+}
+
+.border-bottom{
+    border-bottom:1px solid rgba(225, 225, 255, 0.3)
+}
+
+
+
+/* Image */
+
+.album-img img{
+    width:40%;
+    margin:0 10px;
+}
+
+.album-description{
+    font-size:.7rem;
+}
+
+.album-description:hover{
+    text-decoration: underline;
+}
+
+.play-list-container .play-btn .fa-play{
+    display:none;
+}
+
+.play-btn:hover p{
+    display:none;
+}
+.play-list-container .play-btn:hover .fa-play{
+    display:block;
 }
 
