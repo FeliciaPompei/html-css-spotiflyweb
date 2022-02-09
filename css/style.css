@@ -245,13 +245,7 @@ main #main-content{
 
 #nav-bar-genre{
     width:100%;
-}
-
-#nav-bar-genre ul{
-    margin:auto;
-
-    flex-wrap:wrap;
-    justify-content:center;
+    text-align: center;
 }
 
 #nav-bar-genre ul li{
@@ -280,22 +274,20 @@ main #main-content{
 /* ALBUM CONTAINER */
 
 #playlist .albums{
-    gap:15px;
+    gap:1%;
+
 }
 
 #playlist .albums .album-cover{
-    width:20%;
+    width:calc(88% / 6);
     text-align:center;
     margin:.9rem 0;
 }
 
-#playlist .albums .album-option,
-#playlist .albums .border-radius{
-    width:15%
-}
 
 #playlist .albums .album-cover .album-image{
     position:relative;
+    width:100%;
 }
 
 #playlist .albums .album-cover .album-image .fa-play-circle{
@@ -509,15 +501,15 @@ footer .col-left span:hover{
 /* SCREEN RULES */
 
 /* TABLET HOR. MIN-WIDTH 768PX */
+
 @media screen and (max-width:992px) and (min-width:768px){
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
     }
 
-    main #main-content #playlist .albums .album-cover{
-        gap:15px;
-        width:20%;
+    #playlist .albums .album-cover{
+        width:calc(88% / 4);
     }
 }
 
@@ -530,18 +522,12 @@ footer .col-left span:hover{
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
-        justify-content: center;
+    } 
 
+    #playlist .albums .album-cover{
+        width:calc(88% / 2);
+    } 
 
-    }
-
-    main #main-content #playlist .albums .album-cover{
-        margin:10px 10px  7.5px 0;
-        width:40%;
-    }
-
-    
-    
 }
 
 /* MOBILE MAX-WIDTH 576PX */
@@ -625,7 +611,7 @@ footer .col-left span:hover{
     }
 
     main #main-content #playlist .albums .album-cover{
-        width:40%;
+        width:calc(88% / 2);
     }
 
     .xs-d-block{
