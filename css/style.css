@@ -279,11 +279,19 @@ main #main-content{
 
 /* ALBUM CONTAINER */
 
+#playlist .albums{
+    gap:15px;
+}
+
 #playlist .albums .album-cover{
     width:20%;
     text-align:center;
-    margin:20px 20px  15px 0;
-    
+    margin:.9rem 0;
+}
+
+#playlist .albums .album-option,
+#playlist .albums .border-radius{
+    width:15%
 }
 
 #playlist .albums .album-cover .album-image{
@@ -327,6 +335,7 @@ main #main-content{
 
 #playlist .albums .border-radius img{
     border-radius:50%;
+
 }
 
 /* MAIN-CONTENT HOVERS */
@@ -507,7 +516,8 @@ footer .col-left span:hover{
     }
 
     main #main-content #playlist .albums .album-cover{
-        margin:10px 10px  7.5px 0;
+        gap:15px;
+        width:20%;
     }
 }
 
@@ -520,6 +530,9 @@ footer .col-left span:hover{
 
     main #main-content #playlist .albums{
         flex-wrap:wrap;
+        justify-content: center;
+
+
     }
 
     main #main-content #playlist .albums .album-cover{
@@ -578,6 +591,7 @@ footer .col-left span:hover{
 
     main #main-nav #bot-nav-bar{
         text-align: center;
+        
     }
 
     main #main-nav #bot-nav-bar .border-bottom{
@@ -609,8 +623,7 @@ footer .col-left span:hover{
     }
 
     main #main-content #playlist .albums .album-cover{
-    margin:10px 10px  7.5px 0;
-    width:40%;
+       width:40%;
     }
 
     .xs-d-block{
