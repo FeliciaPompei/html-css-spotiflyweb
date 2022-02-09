@@ -562,9 +562,12 @@ footer .col-left span:hover{
     }
 
 
-    main #main-nav #top-nav-bar,
-    main #main-nav #bot-nav-bar{
+    main #main-nav #top-nav-bar{
         margin:0;
+        padding:0;
+    }
+
+    main #main-nav #bot-nav-bar{
         padding:0;
     }
 
@@ -598,7 +601,6 @@ footer .col-left span:hover{
         border-bottom:none;
         padding:15px 0;
         font-size: 0.8rem;
-        margin-bottom:0;
     }
     
     main #main-nav #bot-nav-bar .border-bottom i{
@@ -623,7 +625,7 @@ footer .col-left span:hover{
     }
 
     main #main-content #playlist .albums .album-cover{
-       width:40%;
+        width:40%;
     }
 
     .xs-d-block{
